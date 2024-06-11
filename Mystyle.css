@@ -1,0 +1,402 @@
+@font-face{
+    font-family: Farsi;
+    src: url(./fonts/IRHoma.ttf);
+    src: url(./fonts/IRMehr.ttf);
+    src: url(./fonts/IRYekan.ttf);
+}
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+*{
+    direction: rtl;
+    font-family: Farsi;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p,h1,h2,h3,h4{
+    color: #66D7EB;
+    margin-top:0;
+}
+body{
+    font-size: 20px;
+    margin: 0px;
+    background-color:  #2c5f78;
+}
+.TopNavBar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #010305;
+    padding: 2vh 0;
+    z-index: 1;
+    box-shadow: 1px 2px 5px rgb(20, 20, 20);
+}
+.TopNavBar a{
+    color: white;
+    background-color: #0e1e2b;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+.TopNavBar i{
+    margin-left: 9px;
+}
+.TopNavBar a:hover{
+    color: white;
+    background-color: #2c5f78;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.BodyContainer{
+    z-index: -1;
+    background-color: #2c5f78;
+}
+.RoundImageContainer{
+    width: 70vh;
+    height: 70vh;
+    border: 6px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    transform:translate(0,-5vh);
+}
+.RoundImageContainer img{
+    transition-duration: 1s;
+}
+.RoundImageContainer img:hover{
+    transform:scale(1.1);
+    
+}
+.IntroContainer{
+    background-color: #0e1e2b;
+    margin: 10vh 0 0 0;
+    height: 60vh;
+    padding: 0 3vw;
+}
+.IntroRightContainer{
+    margin-top: 7vh;
+    float: right;
+    font-size: 3vh;
+}
+.IntroLeftContainer{
+    float: Left;
+}
+.SubTextContainer{
+    display: flex;
+    justify-content: center;
+}
+.IntroLeftContainer h5{
+    display: inline-block;
+    margin-top: 0;
+    top: 0;
+    transform: translate(0,-3vh);
+    padding: 4px 8px;
+    background-color: #010305;
+    color: white;
+    border-radius: 10px;
+    font-size: 2vh;
+}
+.IntroLinkContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.IntroRightContainer a{
+    display: inline-block;
+    padding: 8px;
+    background-color: #010305;
+    color: white;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
+.IntroRightContainer a:hover{
+    background-color: rgb(33, 33, 33);
+}
+.AboutMeContainer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 20vh;
+    background-color: #0e1e2b;
+    width: 100%;
+    overflow: hidden;
+}
+.HalfRoundImageContainer{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    transition-duration: .5s;
+}
+.HalfRoundImageContainer:hover{
+    box-shadow: 0 0 15px #66d7eb;
+}
+.HalfRoundImageContainer img{
+    transition-duration: 1s;
+}
+.HalfRoundImageContainer img:hover{
+    transform:scale(1.1);
+}
+.AboutMeRightContainer{
+    float: right;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AboutMeLeftContainer{
+    float: left;
+
+    text-align: center;
+}
+.TextContainer{
+    font-size: 3vh;
+    text-align: justify;
+    padding-left: 4vh;
+}
+.TextContainer h1{
+    margin: 4vh 0 0 0;
+}
+.TextContainer h3{
+    margin-top: 1vh;
+}
+.PercentContainer{
+    width: 100%;
+    display: flex;
+    height: 35%;
+    font-size: medium;
+    justify-content: center;
+}
+.PercentContainerCenter{
+    width: 64.5vw;
+}
+.HalfDiv{
+    width: 17vw;
+    height: 10px;
+    display: inline-flex;
+}
+.cpp{
+    margin: 0 0 0 2vw;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}.java{
+    margin: 0 2vw 0 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}.html{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+.EmptyBar{
+    width: 30vw;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+    display: block;
+}
+.FullBarCpp{
+    background-color: #66d7eb;
+    width: 50%;
+    height: 1.5rem;
+    border-radius: 20px;
+    float: left;
+    transition-duration: .5s;
+}
+.FullBarJava{
+    background-color: #66d7eb;
+    width: 40%;
+    height: 1.5rem;
+    border-radius: 20px;
+    float: left;
+    transition-duration: .5s;
+}
+.FullBarHtml{
+    background-color: #66d7eb;
+    width: 20%;
+    height: 1.5rem;
+    border-radius: 20px;
+    float: left;
+    transition-duration: .5s;
+}
+.java:hover .FullBarJava{
+    background-color: #9cf0ff;
+    box-shadow: 0 0 15px #66d7eb;
+}
+.cpp:hover .FullBarCpp{
+    background-color: #9cf0ff;
+    box-shadow: 0 0 15px #66d7eb;
+}
+.html:hover .FullBarHtml{
+    background-color: #9cf0ff;
+    box-shadow: 0 0 15px #66d7eb;
+}
+.MyProjects{
+    background-color: #0e1e2b;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.MyProjectsleftContainer{
+    float: left;
+    align-content: center;
+    font-size: 3vh;
+}
+.MyProjectsleftContainer h1{
+    position: relative;
+    top: -15vh;
+}
+.MyProjectsleftContainer p{
+    text-align: center;
+}
+.MyProjectsRightContainer{
+    padding: 1vh;
+    float: right;
+}
+.MyProjectsRightUPContainer{
+    margin: 10vh 10vh 0 0;
+}
+.MyProjectsRightUPContainer img{
+    width: 30vh;
+    height: 12vw;
+    position: relative;
+}
+.topPicture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topPicture :hover{
+    z-index: 100;
+}
+.topPicture img{
+    position: relative;
+    transition-duration: 1s;
+    box-shadow: #2c5f78 0px 2px 50px ;
+}
+.topPicture img:hover{
+    transform: scale(1.2);
+    box-shadow: #3d81a3 0px 4px 100px;
+}
+.downPicture img{
+    position: relative;
+    top: -15vh;
+    transition-duration: 1s;
+    box-shadow: #2c5f78 0px 2px 50px ;
+}
+.downPicture img:hover{
+    transform: scale(1.2);
+    box-shadow: #3d81a3 0px 4px 100px;
+}
+.MyProjectsRightDOWNContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.MyProjectsRightDOWNContainer img{
+    width: 25vh;
+    height: 10vw;
+    transition-duration:.7s;
+}
+.MyProjectsRightDOWNContainer  img:hover{
+    transform: translatey(-40px);
+} 
+.contetcontainer{
+    background-color: #0e1e2b;
+    margin-top: 20vh;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+.RIAGHTcontetcontainer{
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px;
+    float: right;
+}
+.LEFTcontetcontainer{
+    padding: 20px;
+    float: left;
+    justify-content:center;
+    align-content: center;
+}
+.LEFTcontetcontainer p{
+    text-align: center;
+}
+.VIDEOcontainer{
+    padding: 20px;
+   
+}
+.VIDEOcontainer video{
+    width: 90vh;
+    height: 40vw;
+}
+.BUTTONcontainers{
+    display: flex;
+    justify-content: center;
+}
+.Learnmorebutton{
+    font-size: 3vh;
+    color: #66D7EB;
+    background-color:#0e1e2b;
+    border: 5px solid #2e5768;
+    border-radius: 5px;
+    transition:all 0.5s;
+}
+.Learnmorebutton:hover{
+    transform:translateY(-1vh);
+    background-color: #2e5768;
+}
+.outrocontainer{
+    background-color: #0e1e2b;
+    margin-top: 20vh;
+    padding: 30px;
+    box-shadow: #0e1e2b;
+}
+.outroTEXTcontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.outroTEXTcontainer h2{
+    text-shadow: 2px 2px 10px #1100ff;
+    text-decoration: underline #1100ff;
+}
+.outroLINKcontainer{
+    display:flex;
+    justify-content:space-around;
+}
+.outroLINKcontainer div{
+    color: white;
+    background-color: #0e1e2b;
+    padding: 10px 20px;
+    border: solid 3px;
+    border-color: #66D7EB;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+.outroLINKcontainer div:hover{
+    color: white;
+    background-color: #2c5f78;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
